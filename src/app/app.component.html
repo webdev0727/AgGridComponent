@@ -1,0 +1,18 @@
+<div class="maincontainer">
+  <div *ngIf="errorMessage.length" [innerHTML]="errorMessage" class="error-message"></div>
+  <ag-grid-angular
+    #agGrid
+    style="width: 1100px; height: 600px"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [icons]="icons"
+    rowSelection="multiple"
+    rowMultiSelectWithClick="true"
+    [frameworkComponents]="frameworkComponents"
+    [getContextMenuItems]="getContextMenuItems"
+    [sideBar]="sideBar"
+    (gridReady)="onGridReady($event)"
+  >
+  </ag-grid-angular>
+</div>

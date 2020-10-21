@@ -1,0 +1,18 @@
+<div>
+  <input
+    id="selection-checkbox"
+    class=""
+    type="checkbox"
+    name="selection"
+    (change)="handleSelectionChange($event)"
+  />
+  <label for="selection-checkbox">Enable Selection</label>
+  <div>
+    <h5>Total Records:</h5>
+    <div>{{ totalRecords }}</div>
+  </div>
+  <div>
+    <h5>Selected Records:</h5>
+    <div>{{ selectedRecords }}</div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<input
+  *ngIf="showCheckbox"
+  type="checkbox"
+  name="selectAll"
+  [(ngModel)]="selectAll"
+  (change)="handleSelectAllChange($event)"
+/>
